@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" height="320">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0" />
+    </linearGradient>
+    <linearGradient id="chartGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .bg-grid {
+        stroke: rgba(255, 255, 255, 0.04);
+        stroke-width: 1;
+      }
+      .anim-wave-1 {
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: drawLine 6s ease-in-out infinite alternate;
+      }
+      .anim-wave-2 {
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: drawLine 8s ease-in-out infinite alternate 1s;
+      }
+      .anim-pulse {
+        animation: pulseEffect 3s ease-in-out infinite alternate;
+      }
+      .anim-pulse-delayed {
+        animation: pulseEffect 4s ease-in-out infinite alternate 1.5s;
+      }
+      .anim-bar-1 { animation: barGrow 2.5s ease-in-out infinite alternate; }
+      .anim-bar-2 { animation: barGrow 3.2s ease-in-out infinite alternate 0.4s; }
+      .anim-bar-3 { animation: barGrow 2.8s ease-in-out infinite alternate 0.8s; }
+      .anim-bar-4 { animation: barGrow 3.5s ease-in-out infinite alternate 1.2s; }
+      .anim-bar-5 { animation: barGrow 2.9s ease-in-out infinite alternate 0.3s; }
+
+      @keyframes drawLine {
+        0% { stroke-dashoffset: 1200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseEffect {
+        0% { opacity: 0.3; transform: scale(0.96); }
+        100% { opacity: 0.85; transform: scale(1.04); }
+      }
+      @keyframes barGrow {
+        0% { transform: scaleY(0.7); }
+        100% { transform: scaleY(1.15); }
+      }
+
+      .text-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 44px;
+        fill: #ffffff;
+        letter-spacing: -0.5px;
+      }
+      .text-subtitle {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        fill: #94a3b8;
+      }
+      .pill-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        fill: #e2e8f0;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1000" height="320" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Subtle Grid Lines -->
+  <g class="bg-grid">
+    <line x1="100" y1="0" x2="100" y2="320" />
+    <line x1="200" y1="0" x2="200" y2="320" />
+    <line x1="300" y1="0" x2="300" y2="320" />
+    <line x1="400" y1="0" x2="400" y2="320" />
+    <line x1="500" y1="0" x2="500" y2="320" />
+    <line x1="600" y1="0" x2="600" y2="320" />
+    <line x1="700" y1="0" x2="700" y2="320" />
+    <line x1="800" y1="0" x2="800" y2="320" />
+    <line x1="900" y1="0" x2="900" y2="320" />
+
+    <line x1="0" y1="60" x2="1000" y2="60" />
+    <line x1="0" y1="120" x2="1000" y2="120" />
+    <line x1="0" y1="180" x2="1000" y2="180" />
+    <line x1="0" y1="240" x2="1000" y2="240" />
+  </g>
+
+  <!-- Glowing Background Orbs -->
+  <circle cx="850" cy="80" r="140" fill="#38bdf8" opacity="0.12" filter="url(#glow)" />
+  <circle cx="150" cy="240" r="120" fill="#818cf8" opacity="0.10" filter="url(#glow)" />
+  <circle cx="620" cy="200" r="110" fill="#c084fc" opacity="0.08" filter="url(#glow)" />
+
+  <!-- Dynamic Analytics Visuals (Background Wave Curves & Chart Area) -->
+  <g opacity="0.75">
+    <!-- Area Fill 1 -->
+    <path d="M 50 250 Q 200 180, 350 220 T 650 160 T 950 110 L 950 280 L 50 280 Z" fill="url(#chartGrad)" />
+    <!-- Line 1 -->
+    <path class="anim-wave-1" d="M 50 250 Q 200 180, 350 220 T 650 160 T 950 110" fill="none" stroke="#38bdf8" stroke-width="3" filter="url(#softGlow)" />
+
+    <!-- Area Fill 2 -->
+    <path d="M 50 270 Q 250 240, 420 200 T 750 140 T 950 90 L 950 280 L 50 280 Z" fill="url(#chartGrad2)" />
+    <!-- Line 2 -->
+    <path class="anim-wave-2" d="M 50 270 Q 250 240, 420 200 T 750 140 T 950 90" fill="none" stroke="#c084fc" stroke-width="2.5" opacity="0.8" />
+  </g>
+
+  <!-- Background Animated Chart Bars (Right aligned, subtle) -->
+  <g transform="translate(760, 260) scale(1, -1)" opacity="0.45">
+    <rect class="anim-bar-1" x="0" y="0" width="14" height="60" rx="3" fill="#38bdf8" />
+    <rect class="anim-bar-2" x="22" y="0" width="14" height="95" rx="3" fill="#818cf8" />
+    <rect class="anim-bar-3" x="44" y="0" width="14" height="75" rx="3" fill="#a855f7" />
+    <rect class="anim-bar-4" x="66" y="0" width="14" height="120" rx="3" fill="#38bdf8" />
+    <rect class="anim-bar-5" x="88" y="0" width="14" height="85" rx="3" fill="#c084fc" />
+    <rect class="anim-bar-2" x="110" y="0" width="14" height="110" rx="3" fill="#818cf8" />
+    <rect class="anim-bar-1" x="132" y="0" width="14" height="135" rx="3" fill="#38bdf8" />
+  </g>
+
+  <!-- Dynamic Data Point Pulses -->
+  <g class="anim-pulse" transform-origin="650 160">
+    <circle cx="650" cy="160" r="5" fill="#38bdf8" />
+    <circle cx="650" cy="160" r="12" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.6" />
+  </g>
+  <g class="anim-pulse-delayed" transform-origin="950 110">
+    <circle cx="950" cy="110" r="5" fill="#c084fc" />
+    <circle cx="950" cy="110" r="14" fill="none" stroke="#c084fc" stroke-width="2" opacity="0.5" />
+  </g>
+
+  <!-- Foreground Content: Header, Badges, Subtitle (Guaranteed Foreground Visibility) -->
+  <g transform="translate(60, 50)">
+    <!-- Top Decorative Tag -->
+    <rect x="0" y="0" width="190" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="14" cy="13" r="5" fill="#10b981" />
+    <text x="28" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1">CURATED DIRECTORY</text>
+
+    <!-- Main Title -->
+    <text x="0" y="70" class="text-title">
+      Awesome <tspan fill="url(#accentGrad)">Web Analytics</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="105" class="text-subtitle">
+      A curated ecosystem of modern web analytics, product insights &amp; privacy-first engines
+    </text>
+
+    <!-- Interactive / Dynamic Pills -->
+    <g transform="translate(0, 135)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="180" height="34" rx="17" fill="#1e293b" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1" />
+        <text x="18" y="21" class="pill-text">📊 Real-Time Traffic</text>
+      </g>
+
+      <!-- Pill 2 -->
+      <g transform="translate(195, 0)">
+        <rect width="175" height="34" rx="17" fill="#1e293b" stroke="rgba(129, 140, 248, 0.4)" stroke-width="1" />
+        <text x="18" y="21" class="pill-text">🛡️ Privacy &amp; Cookieless</text>
+      </g>
+
+      <!-- Pill 3 -->
+      <g transform="translate(385, 0)">
+        <rect width="180" height="34" rx="17" fill="#1e293b" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1" />
+        <text x="18" y="21" class="pill-text">🚀 Product &amp; Funnels</text>
+      </g>
+
+      <!-- Pill 4 -->
+      <g transform="translate(580, 0)">
+        <rect width="180" height="34" rx="17" fill="#1e293b" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1" />
+        <text x="18" y="21" class="pill-text">⚡ Self-Hosted &amp; SaaS</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Border Frame -->
+  <rect x="0.5" y="0.5" width="999" height="319" rx="16" fill="none" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+</svg>
