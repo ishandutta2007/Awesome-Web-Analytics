@@ -64,87 +64,87 @@ Below is a curated breakdown of leading hosted and commercial SaaS web analytics
 Curated list of self-hostable open-source web analytics, behavioral pipelines, and event platforms.  
 **Sorted descending by GitHub stargazer count.**
 
-### 1. [PostHog](https://github.com/PostHog/posthog) [![GitHub stars](https://img.shields.io/github/stars/PostHog/posthog?style=social&color=white)](https://github.com/PostHog/posthog/stargazers)
+### 1. [PostHog](https://github.com/PostHog/posthog) [![GitHub_Stars](https://img.shields.io/github/stars/PostHog/posthog?style=social&color=white)](https://github.com/PostHog/posthog/stargazers)
 - **Description**: The open-source all-in-one product analytics suite. Features product telemetry, event tracking, session replay, heatmaps, feature flags, A/B testing experiments, user surveys, and data warehouse integration.
 - **Tech Stack**: Python / Django / React / ClickHouse / Kafka / PostgreSQL
 - **Key Advantage**: Replaces Amplitude, Mixpanel, and LaunchDarkly with a single self-hostable stack.
 
-### 2. [Umami](https://github.com/umami-software/umami) [![GitHub stars](https://img.shields.io/github/stars/umami-software/umami?style=social&color=white)](https://github.com/umami-software/umami/stargazers)
+### 2. [Umami](https://github.com/umami-software/umami) [![GitHub_Stars](https://img.shields.io/github/stars/umami-software/umami?style=social&color=white)](https://github.com/umami-software/umami/stargazers)
 - **Description**: Simple, fast, privacy-focused open-source alternative to Google Analytics. Collects only non-identifiable metrics, generates no cookies, bypasses ad-blockers easily when proxied, and offers an ultra-clean UI.
 - **Tech Stack**: Node.js / Next.js / Prisma / PostgreSQL / MySQL
 - **Key Advantage**: Zero cookies, sub-megabyte runtime, multi-tenant dashboard, easy Docker deployment.
 
-### 3. [Plausible Analytics](https://github.com/plausible/analytics) [![GitHub stars](https://img.shields.io/github/stars/plausible/analytics?style=social&color=white)](https://github.com/plausible/analytics/stargazers)
+### 3. [Plausible Analytics](https://github.com/plausible/analytics) [![GitHub_Stars](https://img.shields.io/github/stars/plausible/analytics?style=social&color=white)](https://github.com/plausible/analytics/stargazers)
 - **Description**: Lightweight, open-source, and privacy-respecting website analytics. Provides a simple one-page dashboard showing referral sources, top pages, countries, screen sizes, goals, and custom events.
 - **Tech Stack**: Elixir / Phoenix / ClickHouse / PostgreSQL
 - **Key Advantage**: Script size is under 1KB (45x lighter than GA4), requires no cookie banners, handles high concurrency via ClickHouse.
 
-### 4. [Matomo](https://github.com/matomo-org/matomo) [![GitHub stars](https://img.shields.io/github/stars/matomo-org/matomo?style=social&color=white)](https://github.com/matomo-org/matomo/stargazers)
+### 4. [Matomo](https://github.com/matomo-org/matomo) [![GitHub_Stars](https://img.shields.io/github/stars/matomo-org/matomo?style=social&color=white)](https://github.com/matomo-org/matomo/stargazers)
 - **Description**: The leading enterprise-grade open-source analytics platform (formerly Piwik). Offers 100% data ownership, tag management, goals, custom dimensions, heatmaps, session recordings, and enterprise plugins.
 - **Tech Stack**: PHP / MySQL / MariaDB
 - **Key Advantage**: The closest 1:1 open-source replacement for Google Analytics 360 with comprehensive GDPR tooling.
 
-### 5. [GoAccess](https://github.com/allinurl/goaccess) [![GitHub stars](https://img.shields.io/github/stars/allinurl/goaccess?style=social&color=white)](https://github.com/allinurl/goaccess/stargazers)
+### 5. [GoAccess](https://github.com/allinurl/goaccess) [![GitHub_Stars](https://img.shields.io/github/stars/allinurl/goaccess?style=social&color=white)](https://github.com/allinurl/goaccess/stargazers)
 - **Description**: Real-time web log analyzer and interactive viewer that runs directly in your terminal or via an interactive HTML report in the browser. Reads Nginx, Apache, Caddy, Cloudflare, or AWS logs.
 - **Tech Stack**: C / ncurses
 - **Key Advantage**: 100% server-side with zero JavaScript tracking snippet on client browsers, immune to ad-blockers and privacy blockers.
 
-### 6. [Snowplow](https://github.com/snowplow/snowplow) [![GitHub stars](https://img.shields.io/github/stars/snowplow/snowplow?style=social&color=white)](https://github.com/snowplow/snowplow/stargazers)
+### 6. [Snowplow](https://github.com/snowplow/snowplow) [![GitHub_Stars](https://img.shields.io/github/stars/snowplow/snowplow?style=social&color=white)](https://github.com/snowplow/snowplow/stargazers)
 - **Description**: Enterprise-grade behavioral data pipeline. Collects high-fidelity, schema-validated event data across web, mobile, and server applications directly into your cloud data warehouse (Snowflake, BigQuery, Databricks).
 - **Tech Stack**: Scala / Spark / Kafka / Cloud-native IaC
 - **Key Advantage**: Complete warehouse-native data architecture with strict JSON schema enforcement and immutable event logging.
 
-### 7. [GoatCounter](https://github.com/arp242/goatcounter) [![GitHub stars](https://img.shields.io/github/stars/arp242/goatcounter?style=social&color=white)](https://github.com/arp242/goatcounter/stargazers)
+### 7. [GoatCounter](https://github.com/arp242/goatcounter) [![GitHub_Stars](https://img.shields.io/github/stars/arp242/goatcounter?style=social&color=white)](https://github.com/arp242/goatcounter/stargazers)
 - **Description**: Simple, privacy-aware web analytics without tracking personal data. Can be used as a hosted service or a standalone single binary on a $5/mo VPS.
 - **Tech Stack**: Go / SQLite / PostgreSQL
 - **Key Advantage**: Single Go binary with zero external dependencies, extremely light memory footprint, no cookie consent needed.
 
-### 8. [Countly](https://github.com/Countly/countly-server) [![GitHub stars](https://img.shields.io/github/stars/Countly/countly-server?style=social&color=white)](https://github.com/Countly/countly-server/stargazers)
+### 8. [Countly](https://github.com/Countly/countly-server) [![GitHub_Stars](https://img.shields.io/github/stars/Countly/countly-server?style=social&color=white)](https://github.com/Countly/countly-server/stargazers)
 - **Description**: Open-source product analytics platform built for web, mobile apps, desktop software, and IoT devices. Tracks sessions, crashes, push notifications, and user attribution.
 - **Tech Stack**: Node.js / MongoDB
 - **Key Advantage**: Exceptional support for cross-platform mobile apps (iOS, Android, React Native, Flutter, Unity).
 
-### 9. [Jitsu](https://github.com/jitsucom/jitsu) [![GitHub stars](https://img.shields.io/github/stars/jitsucom/jitsu?style=social&color=white)](https://github.com/jitsucom/jitsu/stargazers)
+### 9. [Jitsu](https://github.com/jitsucom/jitsu) [![GitHub_Stars](https://img.shields.io/github/stars/jitsucom/jitsu?style=social&color=white)](https://github.com/jitsucom/jitsu/stargazers)
 - **Description**: Open-source, high-performance data collection platform and Segment alternative. Captures events from web and mobile apps and streams them in real-time to warehouses and marketing tools.
 - **Tech Stack**: TypeScript / Go / ClickHouse / Redis
 - **Key Advantage**: Seamless event collection, transformation functions, and schema generation with ClickHouse backing.
 
-### 10. [Ackee](https://github.com/electerious/Ackee) [![GitHub stars](https://img.shields.io/github/stars/electerious/Ackee?style=social&color=white)](https://github.com/electerious/Ackee/stargazers)
+### 10. [Ackee](https://github.com/electerious/Ackee) [![GitHub_Stars](https://img.shields.io/github/stars/electerious/Ackee?style=social&color=white)](https://github.com/electerious/Ackee/stargazers)
 - **Description**: Self-hosted, privacy-oriented Node.js analytics tool. Tracks visitors, referrers, and duration without storing personally identifiable information.
 - **Tech Stack**: Node.js / GraphQL / MongoDB
 - **Key Advantage**: Clean minimalist UI with GraphQL API for developers wanting programmatic access.
 
-### 11. [RudderStack](https://github.com/rudderlabs/rudder-server) [![GitHub stars](https://img.shields.io/github/stars/rudderlabs/rudder-server?style=social&color=white)](https://github.com/rudderlabs/rudder-server/stargazers)
+### 11. [RudderStack](https://github.com/rudderlabs/rudder-server) [![GitHub_Stars](https://img.shields.io/github/stars/rudderlabs/rudder-server?style=social&color=white)](https://github.com/rudderlabs/rudder-server/stargazers)
 - **Description**: Warehouse-native customer data platform (CDP). Collects web events, mobile events, and server webhooks and routes them securely to 180+ analytics, marketing, and warehouse destinations.
 - **Tech Stack**: Go / PostgreSQL
 - **Key Advantage**: Full developer-first Segment alternative that prioritizes cloud data warehouse ownership.
 
-### 12. [Shynet](https://github.com/milesmcc/shynet) [![GitHub stars](https://img.shields.io/github/stars/milesmcc/shynet?style=social&color=white)](https://github.com/milesmcc/shynet/stargazers)
+### 12. [Shynet](https://github.com/milesmcc/shynet) [![GitHub_Stars](https://img.shields.io/github/stars/milesmcc/shynet?style=social&color=white)](https://github.com/milesmcc/shynet/stargazers)
 - **Description**: Modern, privacy-friendly, and cookie-free web analytics service. Doesn't use cookies or local storage, and works even when JavaScript is disabled using pixel fallbacks.
 - **Tech Stack**: Python / Django / PostgreSQL
 - **Key Advantage**: Built-in 1-pixel image fallback tracking for JS-disabled clients, script blockers, and email read telemetry.
 
-### 13. [Open Web Analytics (OWA)](https://github.com/Open-Web-Analytics/Open-Web-Analytics) [![GitHub stars](https://img.shields.io/github/stars/Open-Web-Analytics/Open-Web-Analytics?style=social&color=white)](https://github.com/Open-Web-Analytics/Open-Web-Analytics/stargazers)
+### 13. [Open Web Analytics (OWA)](https://github.com/Open-Web-Analytics/Open-Web-Analytics) [![GitHub_Stars](https://img.shields.io/github/stars/Open-Web-Analytics/Open-Web-Analytics?style=social&color=white)](https://github.com/Open-Web-Analytics/Open-Web-Analytics/stargazers)
 - **Description**: Mature open-source alternative to commercial web analytics suites. Delivers heatmaps, mouse tracking, DOM click recording, conversion goals, and WordPress integration.
 - **Tech Stack**: PHP / MySQL
 - **Key Advantage**: Built-in mouse click heatmaps and session replay without third-party external subscriptions.
 
-### 14. [Aptabase](https://github.com/aptabase/aptabase) [![GitHub stars](https://img.shields.io/github/stars/aptabase/aptabase?style=social&color=white)](https://github.com/aptabase/aptabase/stargazers)
+### 14. [Aptabase](https://github.com/aptabase/aptabase) [![GitHub_Stars](https://img.shields.io/github/stars/aptabase/aptabase?style=social&color=white)](https://github.com/aptabase/aptabase/stargazers)
 - **Description**: Open-source, privacy-first, lightweight analytics engine tailored for websites, native desktop, and mobile applications (iOS, Android, macOS, Windows, Linux).
 - **Tech Stack**: Rust / ClickHouse / Svelte
 - **Key Advantage**: Blazing-fast Rust ingestion engine with minimal memory consumption.
 
-### 15. [Swetrix](https://github.com/swetrix/swetrix) [![GitHub stars](https://img.shields.io/github/stars/swetrix/swetrix?style=social&color=white)](https://github.com/swetrix/swetrix/stargazers)
+### 15. [Swetrix](https://github.com/swetrix/swetrix) [![GitHub_Stars](https://img.shields.io/github/stars/swetrix/swetrix?style=social&color=white)](https://github.com/swetrix/swetrix/stargazers)
 - **Description**: Fully open-source, GDPR-compliant web analytics platform with cookieless tracking, live visitor counters, performance monitoring, and error alerts.
 - **Tech Stack**: TypeScript / Node.js / ClickHouse / Redis
 - **Key Advantage**: Includes website performance metrics (Core Web Vitals) alongside regular traffic analytics.
 
-### 16. [Offen Fair Analytics](https://github.com/offen/offen) [![GitHub stars](https://img.shields.io/github/stars/offen/offen?style=social&color=white)](https://github.com/offen/offen/stargazers)
+### 16. [Offen Fair Analytics](https://github.com/offen/offen) [![GitHub_Stars](https://img.shields.io/github/stars/offen/offen?style=social&color=white)](https://github.com/offen/offen/stargazers)
 - **Description**: Fair, lightweight, self-hosted web analytics where operators and website visitors both gain access to the collected data through an auditable, consent-first interface.
 - **Tech Stack**: Go / JavaScript / Docker
 - **Key Advantage**: Consent-first opt-in model that shares analytics data reciprocally with end users.
 
-### 17. [Medama](https://github.com/medama-io/medama) [![GitHub stars](https://img.shields.io/github/stars/medama-io/medama?style=social&color=white)](https://github.com/medama-io/medama/stargazers)
+### 17. [Medama](https://github.com/medama-io/medama) [![GitHub_Stars](https://img.shields.io/github/stars/medama-io/medama?style=social&color=white)](https://github.com/medama-io/medama/stargazers)
 - **Description**: Ultra-fast, privacy-focused open-source website analytics engine powered by SQLite and DuckDB. Single-binary deployment with sub-second queries.
 - **Tech Stack**: Go / SQLite / DuckDB
 - **Key Advantage**: Extremely light on hardware resources; can run millions of monthly pageviews on an entry-level VPS.
@@ -197,7 +197,7 @@ Contributions are warmly welcomed! Help make this the most complete, factual, an
 
 1. 🍴 **Fork** this repository.
 2. 🌿 Create a descriptive feature branch (`git checkout -b add-my-analytics-tool`).
-3. 📝 Update `README.md` following the established formatting, table structure, or star badge conventions.
+3. 📝 Update `README.md` following the established formatting, table structure, or Stars_Badge conventions.
 4. 🔍 Keep descriptions neutral, factual, and include official links.
 5. 🚀 Submit a **Pull Request** with a concise summary of the changes.
 
